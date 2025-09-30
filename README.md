@@ -1,6 +1,6 @@
 # BalnearioAI
 
-Plataforma digital para automatizar la gestión de balnearios con **IA**, **WhatsApp** y **dashboard inteligente**. Permite reservas automáticas, atención personalizada, análisis de métricas y más, todo en la nube.
+Landing page para plataforma digital para automatizar la gestión de balnearios con **IA**, **WhatsApp** y **dashboard inteligente**. Permite reservas automáticas, atención personalizada, análisis de métricas y más, todo en la nube.
 
 ---
 
