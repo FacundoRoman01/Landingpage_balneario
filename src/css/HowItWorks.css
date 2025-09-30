@@ -1,0 +1,169 @@
+.how-section {
+  padding: 5rem 1rem;
+  background: hsl(210, 20%, 98%);
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.how-bg-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, hsl(200, 95%, 45%) 0%, hsl(180, 60%, 50%) 100%);
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  filter: blur(3rem);
+}
+
+.how-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeIn 0.6s forwards;
+}
+
+.how-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media(min-width: 768px) {
+  .how-title {
+    font-size: 3rem;
+  }
+}
+
+@media(min-width: 1024px) {
+  .how-title {
+    font-size: 4rem;
+  }
+}
+
+.how-title-gradient {
+  background: linear-gradient(135deg, hsl(200, 95%, 45%) 0%, hsl(180, 60%, 50%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.how-subtitle {
+  color: hsl(210, 12%, 45%);
+  font-size: 1.125rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Grid */
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media(min-width: 768px) {
+  .how-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* Step */
+.how-step {
+  position: relative;
+  animation: slideUp 0.5s forwards;
+  opacity: 0;
+}
+
+.how-connector {
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .how-connector {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 100%;
+    width: 100%;
+    height: 0.25rem;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, hsl(200, 95%, 45%), hsl(180, 60%, 50%));
+    z-index: 0;
+  }
+}
+
+.how-step-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Number badge */
+.how-step-number {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, hsl(25, 95%, 58%) 0%, hsl(25, 90%, 65%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  box-shadow: 0 10px 40px -10px rgba(255, 111, 0, 0.4);
+}
+
+/* Icon */
+.how-step-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(210, 20%, 90%);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.how-step-icon-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: hsl(200, 95%, 45%);
+}
+
+/* Text */
+.how-step-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: hsl(210, 24%, 16%);
+}
+
+.how-step-desc {
+  color: hsl(210, 12%, 45%);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
