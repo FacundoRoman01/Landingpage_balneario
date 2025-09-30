@@ -10,7 +10,7 @@ Plataforma digital para automatizar la gestión de balnearios con **IA**, **What
 - React Router DOM
 - CSS puro
 - Lucide Icons
-- Vite / Create React App (según corresponda)
+- Vite
 
 ---
 
