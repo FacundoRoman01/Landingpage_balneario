@@ -1,5 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
-import whatsappChat from "../assets/whatsapp-chat.jpg";
+//import whatsappChat from "../assets/whatsapp-chat.jpg";
+import ChatbotIa from "../assets/chatBot.png";
 import "../css/Benefits.css";
 
 const benefits = [
@@ -21,7 +22,7 @@ const Benefits = () => {
           <div className="benefits-image-wrapper">
             <div className="benefits-image-bg" />
             <img 
-              src={whatsappChat} 
+              src={ChatbotIa} 
               alt="WhatsApp chat interface showing beach reservation conversation" 
               className="benefits-image"
             />

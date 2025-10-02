@@ -40,8 +40,8 @@ const CTA = () => {
           {/* Trust badges */}
           <div className="cta-badges">
             <div className="cta-badge">
-              <span className="cta-badge-icon">✔</span>
-              <span>Sin tarjeta de crédito</span>
+              {/* <span className="cta-badge-icon">✔</span>
+              <span>Sin tarjeta de crédito</span> */}
             </div>
             <div className="cta-badge">
               <span className="cta-badge-icon">✔</span>

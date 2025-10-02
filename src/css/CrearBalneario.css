@@ -1,0 +1,92 @@
+/* .crear-balneario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #e8e7e7;
+  border-radius: 30px;
+  font-family: sans-serif;
+}
+
+.crear-balneario-content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.crear-balneario-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-icon {
+  color: #4f46e5;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+.crear-balneario-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.balneario-form .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.balneario-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.balneario-form input,
+.balneario-form textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.required {
+  color: red;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4f46e5;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #3730a3;
+} */

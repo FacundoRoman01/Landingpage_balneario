@@ -1,0 +1,128 @@
+.dashboard-section {
+  padding: 5rem 1rem;
+  background: hsl(210, 20%, 96%);
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fade-in 0.6s ease forwards;
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.dashboard-header p {
+  font-size: 1.125rem;
+  color: hsl(210, 12%, 45%);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(200, 95%, 45%), hsl(180, 60%, 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  animation: scale-in 0.6s ease forwards;
+  box-shadow: 0 10px 40px -10px rgba(59, 130, 246, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px -10px rgba(59, 130, 246, 0.4);
+}
+
+.stat-icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, hsl(200, 95%, 45%), hsl(180, 60%, 50%));
+}
+
+.stat-icon .icon {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.stat-value {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: hsl(210, 24%, 16%);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: hsl(210, 12%, 45%);
+}
+
+.dashboard-preview {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  animation: fade-in 0.6s ease forwards;
+}
+
+.preview-bg {
+  position: absolute;
+  inset: -1rem;
+  background: linear-gradient(135deg, hsl(200, 95%, 45%), hsl(180, 60%, 50%));
+  opacity: 0.2;
+  filter: blur(3rem);
+  border-radius: 1.5rem;
+  z-index: 0;
+}
+
+.dashboard-preview img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 15px 45px -10px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}

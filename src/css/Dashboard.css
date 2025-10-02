@@ -1,0 +1,163 @@
+.dashboard-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+.dashboard-reservas table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-reservas th,
+.dashboard-reservas td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.dashboard-reservas th {
+  background: #f0f0f0;
+}
+
+.dashboard-actions {
+  margin-top: 2rem;
+}
+
+.dashboard-actions .btn {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dashboard-actions .btn:hover {
+  background: #0056b3;
+}
+
+.dashboard-loading {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.dashboard-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-logout {
+  padding: 0.4rem 0.8rem;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background: #d9363e;
+}
+
+/* Dashboard.css */
+
+/* Formulario de edición de balneario */
+.dashboard-balneario-edit {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-balneario-edit h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Grid para los campos */
+.dashboard-balneario-edit .form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.dashboard-balneario-edit input,
+.dashboard-balneario-edit textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.dashboard-balneario-edit input:focus,
+.dashboard-balneario-edit textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.dashboard-balneario-edit textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Checkbox estilo limpio */
+.dashboard-balneario-edit label {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Botón de guardar */
+.dashboard-balneario-edit .btn-save {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dashboard-balneario-edit .btn-save:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-balneario-edit .btn-save:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-balneario-edit .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

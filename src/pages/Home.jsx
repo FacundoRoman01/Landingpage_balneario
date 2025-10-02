@@ -1,5 +1,7 @@
 import Benefits from "../components/Benefits"
 import CTA from "../components/CTA"
+
+import DashboardComponent from "../components/DashboardComponent"
 import Features from "../components/Features"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
@@ -16,6 +18,7 @@ const Home = () => {
     <Features />
     <Benefits />
     <HowItWorks />
+    <DashboardComponent />
     <CTA />
     <Footer />
     
